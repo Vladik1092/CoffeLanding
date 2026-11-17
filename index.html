@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <link rel="stylesheet" href="index.css"/>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Coffe-Demo</title>
+</head>
+<body>
+    <!-- Canvas для дымка -->
+    <canvas id="smoke-canvas"></canvas>
+
+    <header>
+        <div class="menu">
+            <h1>Кофейня</h1>
+            <button class="burger" aria-label="Открыть меню">
+                <span></span><span></span><span></span>
+            </button>
+            <nav class="links">
+                <a href="#offer">Предложения</a>
+                <a href="#why-us">Почему мы</a>
+                <a href="#users-translator">Отзывы</a>
+                <a href="#contacts">Контакты</a>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <!-- Блок 1: Предложение -->
+        <div class="offer" id="offer">
+            <img src="https://cachizer3.2gis.com/reviews-photos/d80f2de3-8dde-4bf9-bc8b-187f147173e5.jpg?w=640" alt="Кофе"/>
+            <div class="offer-text">
+                <h3>Получите скидку 10% за отзыв!</h3>
+                <p>Как получить? Просто покажите что вы оставили отзыв на 2гис!</p>
+            </div>
+        </div>
+
+        <!-- Блок 2: Почему мы -->
+        <div class="why-us" id="why-us">
+            <h2>Почему мы?</h2>
+            <div class="inline-blocks-why-us">
+                <div class="why-us-block">
+                    <h2>1</h2>
+                    <hr/>
+                    <p>Вкусные пирожки и бельгийские вафли</p>
+                </div>
+                <div class="why-us-block">
+                    <h2>2</h2>
+                    <hr/>
+                    <p>Качественные напитки</p>
+                </div>
+                <div class="why-us-block">
+                    <h2>3</h2>
+                    <hr/>
+                    <p>Бариста с радостью расскажут вам о зерне, на котором приготовлен ваш кофе или какао</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Блок 3: Отзывы -->
+        <div class="users-translator" id="users-translator">
+            <h2 class="reviews-title">Отзывы</h2>
+            <div class="inline-translator">
+                <!-- Отзыв 1 -->
+                <div class="review-card">
+                    <div class="box">
+                        <p>Единственная кофейня на 116 км, где самый вкусный кофе в районе — возможно, даже лучше, чем во многих кофейнях Самары! Дети в восторге от мохито и молочного коктейля — свежие и очень вкусные напитки. Спасибо за отличное качество и уютную атмосферу! Желаем вам процветания, побольше гостей и всегда оставаться на такой же высокой волне! Обязательно вернёмся снова! ☕✨</p>
+                    </div>
+                    <div class="user">
+                        <div class="icon">Е</div>
+                        <p>Ekaterina</p>
+                        <p class="estimate">5/5</p>
+                    </div>
+                </div>
+
+                <!-- Отзыв 2 -->
+                <div class="review-card">
+                    <div class="box">
+                        <p>Уютное, приветливое и вкусное кафе</p>
+                    </div>
+                    <div class="user">
+                        <div class="icon">М</div>
+                        <p>Мария.</p>
+                        <p class="estimate">5/5</p>
+                    </div>
+                </div>
+
+                <!-- Отзыв 3 -->
+                <div class="review-card">
+                    <div class="box">
+                        <p>По возможности заглядываю сюда и частенько беру айс-латте с кокосовым сиропом (его очень вкусно делают) и сэндвич с рыбкой, он вообще отпадный 🥹🫶🏻 Место само по себе очень уютное и миленькое, + рядом с домом🦭 Короче, 10 из 10 ⭐️✨💫</p>
+                    </div>
+                    <div class="user">
+                        <div class="icon">А</div>
+                        <p>Анастасия</p>
+                        <p class="estimate">5/5</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer id="contacts">
+        <div class="map-and-contacts">
+            <div class="map">
+                <iframe 
+                    src="https://yandex.ru/map-widget/v1/?ll=50.083886%2C53.120302&z=18&pt=50.083886,53.120302,pm2rdm" 
+                    width="100%" 
+                    height="400" 
+                    frameborder="0"
+                    allowfullscreen="true">
+                </iframe>
+            </div>
+            <div class="contacts">
+                <p>Номер телефона: +7999999999</p>
+                <p>Почта: example@example.com</p>
+                <p>Наше расположение: Долотный переулок 11</p>
+            </div>
+        </div>
+    </footer>
+    <script src="index.js"></script>
+</body>
+</html>
